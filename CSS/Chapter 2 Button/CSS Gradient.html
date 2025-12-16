@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradient</title>
+    <style>
+        #div1{
+            width: 500px;
+            height: 200px;
+            background: linear-gradient(to top left, yellow, red, pink);
+        }
+        #div2{
+            width: 500px;
+            height: 200px;
+            background: repeating-linear-gradient(to top left, yellow, red 10%, pink 40%);
+        }
+        #div3{
+            width: 500px;
+            height: 200px;
+            background: radial-gradient(circle farthest-side at 60% 40%, red, green, blue)
+        }
+        #div4{
+            width: 500px;
+            height: 200px;
+            background: repeating-radial-gradient(circle closest-side at 20% 50%, red, green, blue)
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1)Linear Gradients**
+        Background: linear-gradient(direction, color1, color2, ... color-n)
+
+
+        2)Directions:
+        -to bottom (default)
+        -to right
+        -to left
+        -to top
+
+        +OR diagonally
+        -to bottom right
+        -to bottom left
+        -to top left
+        -to top right
+
+
+        3)Repeating Linear Gradients**
+        background: repeating-linear-gradient(Directions, colors(percentage));
+        background: repeating-radial-gradient(shape size at position, start to end color);
+
+        4)Radial Gradient**
+        background: radial-gradient(shape size at position, start to end color);
+        background: radial-gradient(circle closest-side at 55% 45%, red, green, yellow);
+
+        +Shape:
+        -ellipse(be default)
+        -circle
+
+        *Size:
+        -farthest-corner(by default)
+        -closest-side
+        -closest-corner
+        -farthest-side
+
+        *Position:
+        -Center(by default)
+    -->
+    <div id="div1">
+
+    </div><br>
+    <div id="div2">
+        
+    </div><br>
+    <div id="div3">
+        
+    </div><br>
+    <div id="div4">
+        
+    </div>
+</body>
+</html>
