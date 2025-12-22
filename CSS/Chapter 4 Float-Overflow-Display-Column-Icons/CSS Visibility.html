@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Visibility</title>
+    <style>
+        .d1{
+            width: 300px;
+            height: 200px;
+            background-color: yellow;
+            float: left;
+            visibility: hidden; /* not remove the space */
+            /*display:none;*/ /* remove the space */
+        }
+        .d2{
+            width: 300px;
+            height: 200px;
+            background-color: grey;
+            float: left;
+        }
+        .d3{
+            width: 300px;
+            height: 200px;
+            background-color: pink;
+            float: left;
+            visibility: inherit;
+        }
+        #d4 {
+            visibility: hidden;
+        }
+
+        #td4{
+            visibility: collapse;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        visible: Element will be visible, it is default value
+        hidden: Element will be hide, but it will take space
+        inherit: It will get parent element value
+        collapse: Used in table to remove row or column
+    -->
+    <div class="d1">d1</div>
+    <div class="d2">d2</div>
+    <div id="d4">
+        <div class="d3">d3</div>
+    </div>
+    
+    <table border="1" width="">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td id="td4">4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+</body>
+</html>
