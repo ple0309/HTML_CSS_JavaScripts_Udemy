@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Pseudo Element</title>
+    <style>
+        h1::first-letter{
+            color: yellow;
+            font-size: 100px;
+        }
+        #para::before{
+            content: "Before the h1";
+        }
+        #para::after{
+            content: "After the h1";
+        }
+        p::first-line{
+            color: blue;
+            background-color: black;
+        }
+        p::selection{
+            color: yellow;
+            background-color: black;
+        }
+        ::placeholder{
+            color: blue;
+        }
+    </style>
+</head>
+<!--
+    Simple selectors
+    Combinator selector
+    Pseudo-class selectors
+    Attribute selectors
+
+    The element used to style a part of element content.
+    As:
+    -First letter of content
+    -First line of content
+    -First character of content
+    -Before or after the element content
+
+    Syntax:
+    -CSS_selector::pseudo-element{
+        propertyName:valueName;
+    }
+
+    Example:
+    Pseudo-element selectors
+    ::after
+    ::before
+    ::first-letter
+    ::first-line
+    ::selection
+    ::placeholder
+-->
+<body>
+    <h1>How are you!</h1>
+    <p id="para">How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! How are you! vHow are you! How are you! </p>
+    <p>2ND paragraph...</p>
+    <form>
+        <label for="first_name">First Name</label>
+        <input type="text" name="f_name" placeholder="First Name">
+        <label for="last_name">Last Name</label>
+        <input type="text" name="l_name" placeholder="Last Name">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Email">
+        <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo Class Part 1</title>
+    <style>
+        p:first-child{
+            background-color: black;
+            color: white;
+        }
+        p:last-child{
+            background-color: blue;
+            color: red;
+        }
+        p:nth-child(2){
+            background-color: aqua;
+            color:bisque
+        }
+        p:nth-last-child(2){
+            background-color: blueviolet;
+            color: aquamarine;
+        }
+        p:not(.para){
+            border: 10px solid red;
+        }
+        a:link{
+            border: 1px solid gray;
+            color: green;
+        }
+        a:hover{
+            color: black; 
+        }
+        a:active{
+            color: yellow;
+        }
+        a:visited{
+            color: brown;
+        }
+    </style>
+</head>
+<!--
+Pseudo Class: used to define the state of the HTML element. As hover, active, focus etc.
+
+Code Example:
+a:pseudo_class{
+    background-color: red;
+}
+
+a:hover{
+    background-color: gray;
+}
+
+:first-child
+:last-child
+:nth-child(1,2,3 or 2n, 2n+1 etc)
+:nth-last-child()
+:nth-of-type() :it will affect on selector only then the index(2)
+:nth-last-of-type()
+:only-child()
+:empty
+:not
+:link
+:visited
+:hover
+:active
+
+-->
+<body> <!--6 child-->
+    <ul>
+        <li><a href="#">List item...1</a></li>
+        <li><a href="#">List item...2</a></li>
+        <li><a href="#">List item...3</a></li>
+        <li><a href="#">List item...4</a></li>
+        <li><a href="#">List item...5</a></li>
+    </ul>
+    <p>Paragraph...2 child of body</p>
+    <p>Paragraph...3 child of body</p>
+    <div>
+        <p>Paragraph...1 child of div</p>
+        <p class="para">Paragraph...2 child of div</p>
+        <p>Paragraph...3 child of div</p>
+        <p>Paragraph...4 child of div</p>
+    </div>
+    <div>
+        <p>Paragraph...1 child of 2nd Div</p>
+    </div>
+    <ul>
+        <li>List item...1</li>
+        <li>List item...2</li>
+        <li>List item...3</li>
+        <li>List item...4</li>
+        <li>List item...5</li>
+    </ul>
+</body>
+</html>
